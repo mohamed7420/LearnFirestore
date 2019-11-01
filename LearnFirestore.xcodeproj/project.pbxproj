@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		776265BCA1D3BA218D3AD01E /* Pods_LearnFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD0CE8261A730D3DB8766D4 /* Pods_LearnFirestore.framework */; };
 		BAB54265236CC3D400F75F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB54264236CC3D400F75F52 /* AppDelegate.swift */; };
 		BAB54267236CC3D400F75F52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB54266236CC3D400F75F52 /* SceneDelegate.swift */; };
 		BAB54269236CC3D400F75F52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB54268236CC3D400F75F52 /* ViewController.swift */; };
 		BAB5426C236CC3D400F75F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB5426A236CC3D400F75F52 /* Main.storyboard */; };
 		BAB5426E236CC3D600F75F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB5426D236CC3D600F75F52 /* Assets.xcassets */; };
 		BAB54271236CC3D600F75F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB5426F236CC3D600F75F52 /* LaunchScreen.storyboard */; };
+		BAB54279236CC47100F75F52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAB54278236CC47100F75F52 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		596B3E8FBC9074B013C25851 /* Pods-LearnFirestore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnFirestore.debug.xcconfig"; path = "Target Support Files/Pods-LearnFirestore/Pods-LearnFirestore.debug.xcconfig"; sourceTree = "<group>"; };
+		AAEAF7EF09EF3F0BD8853F47 /* Pods-LearnFirestore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnFirestore.release.xcconfig"; path = "Target Support Files/Pods-LearnFirestore/Pods-LearnFirestore.release.xcconfig"; sourceTree = "<group>"; };
 		BAB54261236CC3D400F75F52 /* LearnFirestore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnFirestore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB54264236CC3D400F75F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAB54266236CC3D400F75F52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		BAB5426D236CC3D600F75F52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAB54270236CC3D600F75F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAB54272236CC3D600F75F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB54278236CC47100F75F52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCD0CE8261A730D3DB8766D4 /* Pods_LearnFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776265BCA1D3BA218D3AD01E /* Pods_LearnFirestore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0314C76F3D1CC790B189DAE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				596B3E8FBC9074B013C25851 /* Pods-LearnFirestore.debug.xcconfig */,
+				AAEAF7EF09EF3F0BD8853F47 /* Pods-LearnFirestore.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2097D714F8839B71E9857E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0CE8261A730D3DB8766D4 /* Pods_LearnFirestore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAB54258236CC3D400F75F52 = {
 			isa = PBXGroup;
 			children = (
 				BAB54263236CC3D400F75F52 /* LearnFirestore */,
 				BAB54262236CC3D400F75F52 /* Products */,
+				0314C76F3D1CC790B189DAE1 /* Pods */,
+				A2097D714F8839B71E9857E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +83,7 @@
 		BAB54263236CC3D400F75F52 /* LearnFirestore */ = {
 			isa = PBXGroup;
 			children = (
+				BAB54278236CC47100F75F52 /* GoogleService-Info.plist */,
 				BAB54264236CC3D400F75F52 /* AppDelegate.swift */,
 				BAB54266236CC3D400F75F52 /* SceneDelegate.swift */,
 				BAB54268236CC3D400F75F52 /* ViewController.swift */,
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAB54275236CC3D600F75F52 /* Build configuration list for PBXNativeTarget "LearnFirestore" */;
 			buildPhases = (
+				4B3A6A93F0F18F722015B12A /* [CP] Check Pods Manifest.lock */,
 				BAB5425D236CC3D400F75F52 /* Sources */,
 				BAB5425E236CC3D400F75F52 /* Frameworks */,
 				BAB5425F236CC3D400F75F52 /* Resources */,
+				54813EB1366E0BF1B9EE26F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAB54271236CC3D600F75F52 /* LaunchScreen.storyboard in Resources */,
+				BAB54279236CC47100F75F52 /* GoogleService-Info.plist in Resources */,
 				BAB5426E236CC3D600F75F52 /* Assets.xcassets in Resources */,
 				BAB5426C236CC3D400F75F52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B3A6A93F0F18F722015B12A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnFirestore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54813EB1366E0BF1B9EE26F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnFirestore/Pods-LearnFirestore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnFirestore/Pods-LearnFirestore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearnFirestore/Pods-LearnFirestore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAB5425D236CC3D400F75F52 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		BAB54276236CC3D600F75F52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 596B3E8FBC9074B013C25851 /* Pods-LearnFirestore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		BAB54277236CC3D600F75F52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAEAF7EF09EF3F0BD8853F47 /* Pods-LearnFirestore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

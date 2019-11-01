@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +15,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+        let db = Firestore.firestore()
+        
+        
+        // intailize document to add fields
+        
+        var documnets:DocumentReference? = nil
+        
+        
+        
+        documnets = db.collection("Users").addDocument(data: ["Name" : "Mohamed"], completion: { (error) in
+            
+            
+            if let error = error {
+                
+                print(error.localizedDescription)
+            }else{
+                
+                print("data added successfully")
+            }
+            
+        })
+        
+        
+        // read data
+        
+        
+        db.collection("Users").getDocuments { (snapQuery, error) in
+            
+            if let error = error {
+                
+                
+                print(error.localizedDescription)
+            }else{
+                
+                for document in snapQuery!.documents {
+                    
+                    
+                    print(document["Name"] as! String)
+                }
+            }
+            
+            
+        }
+        
+
         return true
     }
 
